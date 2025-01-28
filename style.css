@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --light-text: #000000;
+    --dark-text: #ffffff;
+    --text-font: "Poppins";
+    --bg-light:#C4B5A5;
+    --bg-dark:#020100;
+    --clr-yellow:#FB982F;
+}
+[data-theme="dark"] {
+    --dark-text: #000000;
+    --light-text: #ffffff;
+    --text-font: "Poppins";
+    --bg-dark:#C4B5A5;
+    --bg-light:#020100;
+    --clr-yellow:#FB982F;
+  }
+  .logooo{
+    color: var(--light-text);
+    font-size: 28px;
+    font-weight: 900;
+  }
+body{
+    font-family: var(--text-font);
+    background-color: var(--bg-light);
+    color: var(--light-text);
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 54px 20px;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header__nav__list{
+    display: flex;
+    align-items: center;
+    gap: 88px;
+    list-style: none;
+}
+.header__nav__item a{
+    text-decoration: none;
+    color: var(--light-text);
+}
+.button__list{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    list-style: none;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.left__wrapper h1{
+    font-family: "Poppins";
+font-size: 36px;
+font-weight: 700;
+line-height: 55.87px;
+text-align: left;
+}
+.left__wrapper p{
+    font-family: "Poppins";
+font-size: 16px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+}
+.left__wrapper button{
+ background-color: var(--clr-yellow);
+ font-family: "Poppins";
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: center;
+}
+.left__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:80px;
+}
+.lightmode{
+    background-color: var(--clr-yellow);
+    color: var(--light-text);
+    border-radius: 6px;
+   
+}
+.lightmode:hover{
+    color: var(--dark-text);
+}
+.darkmode{
+    background-color: var(--bg-dark);
+    color: var(--dark-text);
+    border-radius: 6px;
+}
+.darkmode:hover{
+    color: var(--clr-yellow);
+}
